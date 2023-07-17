@@ -7,9 +7,10 @@
     "ui5-i18n-excel-converter": "./build/index.js"
   },
   "scripts": {
-    "build": "rimraf build && tsc && tsc-alias",
     "dev:export": "tsx watch src/index.ts export ./test/export/i18n ./test/export/export.xlsx -v",
-    "dev:import": "tsx watch src/index.ts import ./test/export/export.xlsx ./test/import/i18n -v -d"
+    "dev:import": "tsx watch src/index.ts import ./test/export/export.xlsx ./test/import/i18n -v -d",
+    "build": "rimraf build && tsc && tsc-alias",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
