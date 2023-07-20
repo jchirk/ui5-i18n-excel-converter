@@ -1,6 +1,6 @@
 {
   "name": "ui5-i18n-excel-converter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI tool to convert i18n files to Excel and the other way",
   "main": "src/index.ts",
   "bin": {
