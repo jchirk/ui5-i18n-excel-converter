@@ -48,7 +48,7 @@ Options:
 
 Commands:
   export [options] [i18n_folder] [excel_file]  convert properties files to Excel
-  import [options] <excel_file> [i18n_folder]  import data from Excel file and update the i18n properties files (if the file doesn't exist it will be created)
+  import [options] [excel_file] [i18n_folder]  import data from Excel file and update the i18n properties files (if the file doesn't exist it will be created)
   help [command]                               display help for command
 ```
 
