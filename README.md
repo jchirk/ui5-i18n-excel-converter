@@ -69,12 +69,12 @@ Options:
 
 ### Import
 ```
-Usage: ui5-i18n-excel-converter import [options] <excel_file> [i18n_folder]
+Usage: ui5-i18n-excel-converter import [options] [excel_file] [i18n_folder]
 
 import data from Excel file and update the i18n properties files (if the file doesn't exist it will be created)
 
 Arguments:
-  excel_file     excel file
+  excel_file     excel file (default: "./<project_name>.xlsx")
   i18n_folder    i18n folder (default: "./webapp/i18n")
 
 Options:
