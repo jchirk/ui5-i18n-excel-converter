@@ -21,7 +21,7 @@ program
   .description(
     "import data from Excel file and update the i18n properties files (if the file doesn't exist it will be created)"
   )
-  .argument("<excel_file>", "excel file")
+  .argument("[excel_file]", "excel file", "./<project_name>.xlsx")
   .argument("[i18n_folder]", "i18n folder", "./webapp/i18n")
   .option("-v, --verbose", "display logs", false)
   .option(
