@@ -14,6 +14,11 @@ export function excelToProperties(
     logger.info("Delete flag is ON");
   }
 
+  if (excelFile === "./<project_name>.xlsx") {
+    const projectName = File.getProjectName(i18nFolder);
+    excelFile = `${projectName}.xlsx`;
+  }
+
   const excelFileAoa = Xslx.readExcelFile(excelFile);
   const i18nFilesInformation = File.getFilesInformationInFolder(i18nFolder);
 
